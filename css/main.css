@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Section - Navbar */
+
+nav {
+  width: 100%;
+  position: fixed;
+  font-size: 1.5em;
+}
+
+nav.scrolled {
+  background-color: white; !important;
+  transition: background-color 200ms linear;
+  border: 1px solid grey;
+}
+
+nav.scrolled a {
+  color: rgba(62,87,83);
+}
+
+nav a {
+  float: left;
+  color: white;
+  margin-left: 30px;
+}
+
+nav a span{
+  margin-left: 10px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Section - Header */
+
+header {
+  background: url('../images/background-img.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+header a {
+  margin-top: 150px;
+}
+
+header h1 {
+  font-size: 60px;
+  color: white;
+}
+
+header p {
+  font-size: 20px;
+  color: white;
+}
+
+header a  {
+  font-size: 30px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+header a:hover {
+  background: rgba(62,87,83);
+}
+
+
+/* Section - About */
+
+.aboutmepage {
+  height: 50vh;
+  background-color: rgba(62,87,83);
+  padding: 50px 0;
+}
+
+.aboutmepage aside {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  overflow: auto;
+}
+
+.aboutmepage aside img {
+  border-radius: 50%;
+  width: 300px;
+  float: left;
+  margin-right: 50px;
+}
+
+.aboutmepage aside p {
+  color: white;
+  padding: 60px;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.aboutmepage aside p span {
+  color: red;
+}
+
+/* Section - Skills */
+
+.skillpage {
+  height: 60vh;
+  text-align: center;
+}
+
+.skillpage div {
+  color: rgb(62,87,83);
+  margin: 120px 0;
+  padding-top: 40px;
+}
+
+.skillpage div h2 {
+  font-size: 50px;
+}
+
+.skillpage aside {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.skillpage aside h4 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.skillpage aside p {
+  font-size: 14px;
+  color: grey;
+}
+
+.skillpage aside i {
+  font-size: 80px;
+  color: rgba(62,87,83);
+}
+
+
+/* Section - Portfolio */
+
+.projectpage {
+  text-align: center;
+}
+
+.projectpage h3 {
+  color: rgba(62,87,83);
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.projectpage aside {
+  padding-top: 35px;
+}
+
+.projectpage aside a {
+  width: 35%;
+}
+
+.projectpage aside a:hover {
+  opacity: 0.3;
+}
+
+.projectpage aside > .hoverimg {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* Section - Contact */
+
+.contactmepage {
+  height: 100vh;
+}
+
+.contactmepage .link {
+  height: 40vh;
+  background-color: rgba(62,87,83);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 0 20px;;
+  text-align: center;
+  color: white;
+}
+
+.contactmepage .link h1 {
+  font-size: 40px;
+}
+
+.contactmepage .link a {
+  font-size: 30px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.contactmepage .link a:hover {
+  background: white;
+  color: rgba(62,87,83);
+}
+
+.contactmepage .touch {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 0 20px;;
+  text-align: center;
+  color: rgb(62,87,83);
+}
+
+.contactmepage .touch h1 {
+  font-size: 40px;
+}
+
+.contactmepage .touch p {
+  padding: 30px 0;
+  font-size: 15px;
+}
+
+.contactmepage .touch div a {
+  color: rgb(62,87,83);
+  position: relative;
+  transition: all 500ms ease;
+}
+
+.contactmepage .touch div a:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+	left: 0px;
+	width: 0px;
+  height: 2px;
+  background: rgb(62,87,83);
+  transition: all 1s ease;
+}
+
+.contactmepage .touch div a:hover:before {
+  width: 100%;
+}
+
+.contactmepage .touch div i {
+   font-size: 80px;
+   padding: 40px 70px 0 70px;
+}
+
+
+/* Section - Footer */
+
+.contactmepage footer {
+  height: 5vh;
+  background-color: rgb(62,87,83);
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
